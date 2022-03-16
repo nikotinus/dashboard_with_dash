@@ -22,7 +22,7 @@ df = (pd.read_csv("games.csv")
       })
      )
 genres_values = list(df.Genre.unique())
-ratings_values = list(df.Rating.unique()), 
+ratings_values = list(df.Rating.unique()) 
 
 app.layout = html.Div(children=[
     html.Div(
@@ -59,7 +59,7 @@ app.layout = html.Div(children=[
             dcc.Dropdown(
                 options=genres_values,
                 multi=True,
-                value=genres_values)),
+                value=genres_values,
                 id='genre_filter'),
             ], style={'padding': 5, 'flex': 1}),
 

@@ -20,6 +20,7 @@ df = (pd.read_csv("games.csv")
       .astype({
           'User_Score': float
       })
+      .sort_values("Year_of_Release")
      )
 genres_values = list(df.Genre.unique())
 ratings_values = list(df.Rating.unique()) 

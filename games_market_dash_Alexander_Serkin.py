@@ -78,7 +78,7 @@ app.layout = html.Div(children=[
 
     html.Div([
         html.Div(
-            html.Label("Количество выпушенных игр с учетом установленных фильтров")
+            html.Label("Количество выпущенных игр с учетом установленных фильтров")
             ,id='text1'
             , style={'padding': 5, 'flex': 1}),
         html.Div([]
